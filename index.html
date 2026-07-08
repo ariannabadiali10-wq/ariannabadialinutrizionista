@@ -17,56 +17,85 @@
 
     <nav class="sticky top-0 z-50 bg-white shadow-sm border-b border-rose-100">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-xl font-extrabold text-slate-900 tracking-tight uppercase italic">Dott.ssa <span class="font-light text-crimson">Arianna Badiali</span></h1>
+            <div class="flex items-center gap-3">
+                <img src="logo.jpg" alt="" class="h-10 w-auto" onerror="this.style.display='none'">
+                <h1 class="text-xl font-extrabold text-slate-900 tracking-tight uppercase italic">Dott.ssa <span class="font-light text-crimson">Arianna Badiali</span></h1>
+            </div>
             <div class="hidden md:flex space-x-6 items-center font-bold text-sm italic">
                 <a href="#biografia" class="hover:text-crimson transition">Chi Sono</a>
                 <a href="#metodo" class="hover:text-crimson transition">Il Metodo</a>
                 <a href="#prezzi" class="hover:text-crimson transition">Listino</a>
+                <!-- Aggiunti i link per Recensioni e Contatti -->
                 <a href="#recensioni" class="hover:text-crimson transition">Recensioni</a>
                 <a href="#contatti" class="hover:text-crimson transition">Contatti</a>
+                <div class="flex gap-4 border-l pl-6 border-rose-100">
+                    <a href="https://www.facebook.com/ariannabadialinutrizionista" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" class="w-5 h-5" alt="FB">
+                    </a>
+                    <a href="https://www.instagram.com/ariannabadiali_nutrizionista/" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" class="w-5 h-5" alt="IG">
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
 
     <header class="hero-gradient py-16 md:py-24">
-        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
-            <!-- FOTO -->
-            <div class="md:w-1/3">
-                <div class="w-64 h-64 md:w-80 md:h-80 bg-rose-200 rounded-3xl mx-auto shadow-2xl flex items-center justify-center overflow-hidden border-4 border-white">
-                    <img src="INSERISCI_QUI_URL_TUA_FOTO" alt="Dott.ssa Arianna Badiali" class="object-cover w-full h-full">
-                </div>
-            </div>
-            <div class="md:w-1/2 text-center md:text-left">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 text-center md:text-left">
                 <div class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-crimson uppercase bg-rose-100 rounded-full">Nutrizione a Jesi e Online</div>
                 <h2 class="text-4xl md:text-6xl font-extrabold text-slate-900 leading-tight italic mb-6">
                     Nutrire il corpo è un <span class="text-crimson">gesto d'amore</span> verso se stessi.
                 </h2>
+                <p class="text-lg text-slate-600 mb-8 max-w-lg mx-auto md:mx-0 font-medium">
+                    Senza schiavitù o costrizioni. Ti guido in un percorso di educazione alimentare per ritrovare l'equilibrio con consapevolezza.
+                </p>
                 <a href="#contatti" class="bg-crimson text-white px-10 py-4 rounded-xl font-bold shadow-lg hover:scale-105 transition uppercase text-sm tracking-widest">Contattami</a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="arianna.jpg" alt="Dott.ssa Arianna Badiali" class="w-80 h-80 md:w-[450px] md:h-[450px] object-cover rounded-3xl shadow-2xl border-[12px] border-white" onerror="this.src='https://via.placeholder.com/450x450?text=Arianna+Badiali'">
             </div>
         </div>
     </header>
 
-    <!-- BIOGRAFIA, METODO E PREZZI RIMANGONO INVARIATI -->
     <section id="biografia" class="py-20 bg-white">
-        <div class="container mx-auto px-6 max-w-5xl text-center">
-            <h3 class="text-3xl font-bold mb-6 text-crimson uppercase italic tracking-tighter">Il mio percorso</h3>
-            <p class="text-slate-600 leading-relaxed max-w-2xl mx-auto">
-                Laureata in Scienze Biologiche e Magistrale in Scienze dell’Alimentazione. Opero come Biologa Nutrizionista (Albo n. 4019). Il mio obiettivo è insegnarti che mangiare bene non è una punizione, ma un favore che fai alla tua salute.
-            </p>
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-3xl font-bold mb-6 text-crimson uppercase italic tracking-tighter">Il mio percorso</h3>
+                    <p class="text-slate-600 leading-relaxed mb-4">
+                        Mi sono laureata in <strong>Scienze Biologiche</strong> nel 2016, conseguendo poi con lode la <strong>Laurea Magistrale in Scienze dell’Alimentazione</strong> presso l’Università di Perugia nel 2020.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        Oggi opero come <strong>Biologa Nutrizionista (Albo n. 4019)</strong> con P.IVA 02864320425. Il mio obiettivo è insegnarti che mangiare bene non è una punizione, ma un favore che fai alla tua salute e longevità.
+                    </p>
+                </div>
+                <div class="bg-rose-50 p-10 rounded-3xl border-r-8 border-crimson shadow-inner">
+                    <p class="text-slate-700 italic leading-relaxed text-lg">
+                        "Nulla è proibito, niente viene tolto. Basta solo prendere consapevolezza di ciò che introduciamo e con quale frequenza."
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="metodo" class="py-20 bg-slate-50">
         <div class="container mx-auto px-6 max-w-6xl">
-            <h3 class="text-3xl font-bold italic text-crimson uppercase tracking-widest mb-16 text-center">Come Lavoro</h3>
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold italic text-crimson uppercase tracking-widest inline-block border-b-2 border-crimson pb-2 text-center">Come Lavoro</h3>
+            </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <div class="bg-white p-8 rounded-3xl shadow-sm border border-rose-100">
-                    <h4 class="text-xl font-bold text-crimson mb-4 uppercase italic">Prima visita</h4>
-                    <p class="text-slate-600 italic">Valutazione antropometrica, bioimpedenziometria, anamnesi alimentare e piano personalizzato.</p>
+                    <h4 class="text-xl font-bold text-crimson mb-4 uppercase italic">Prima visita nutrizionale</h4>
+                    <p class="text-slate-600 leading-relaxed italic">
+                        Valutazione antropometrica e mediante bioimpedenziometria dello stato di salute del paziente, anamnesi alimentare per conoscere le abitudini del paziente e capire come si approccia al cibo durante la giornata, capire quali sono le criticità e cercare assieme di elaborare un piano che sia il più idoneo possibile per il paziente. Il piano alimentare verrà inviato entro 5 giorni dalla prima visita.
+                    </p>
                 </div>
                 <div class="bg-white p-8 rounded-3xl shadow-sm border border-rose-100">
-                    <h4 class="text-xl font-bold text-crimson mb-4 uppercase italic">Controlli</h4>
-                    <p class="text-slate-600 italic">Monitoraggio progressi, modifica piano nutrizionale e nuove rilevazioni antropometriche.</p>
+                    <h4 class="text-xl font-bold text-crimson mb-4 uppercase italic">Controlli mensili</h4>
+                    <p class="text-slate-600 leading-relaxed italic">
+                        I controlli fatti con cadenza mensile servono per vedere insieme come sta andando il percorso, modificare se serve il piano nutrizionale e rilevare nuovamente le misure antropometriche e mediante bioimpedenziometria, per verificare appunto come si sta comportando il paziente riguardo al piano alimentare.
+                    </p>
                 </div>
             </div>
         </div>
@@ -75,11 +104,13 @@
     <section id="prezzi" class="py-20 bg-white">
         <div class="container mx-auto px-6 max-w-6xl text-center">
             <h3 class="text-3xl font-bold mb-16 italic text-crimson uppercase tracking-widest border-b-2 border-crimson inline-block pb-2">Listino e Pacchetti</h3>
+
             <h4 class="text-xl font-bold text-slate-800 mb-8 italic uppercase tracking-wider">Percorsi Completi</h4>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 max-w-4xl mx-auto">
                 <div class="bg-white p-8 rounded-3xl shadow-sm border border-rose-100 italic">
                     <h5 class="font-bold mb-4">Prima Visita</h5>
                     <p class="text-4xl font-black text-crimson mb-2">€100</p>
+                    <p class="text-xs text-slate-500">60 min + Piano Personalizzato</p>
                 </div>
                 <div class="bg-white p-8 rounded-3xl shadow-sm border-2 border-rose-200 italic">
                     <h5 class="font-bold mb-4">Pacchetto Nutrizione</h5>
@@ -89,42 +120,55 @@
                 <div class="bg-crimson text-white p-8 rounded-3xl shadow-xl border-4 border-rose-200 italic md:col-span-2">
                     <h5 class="font-bold mb-4">Percorso Semestrale (Promo)</h5>
                     <p class="text-4xl font-black mb-2">€350</p>
-                    <p class="text-xs opacity-90 font-bold uppercase">Visita + Piano + 6 Controlli</p>
+                    <p class="text-xs opacity-90 font-bold uppercase tracking-widest">Visita + Piano + 6 Controlli</p>
                 </div>
             </div>
+
+            <h4 class="text-xl font-bold text-slate-800 mb-8 italic uppercase tracking-wider">Mantenimento e Controlli</h4>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-rose-100 italic">
+                    <h5 class="font-bold mb-4">Controllo Singolo</h5>
+                    <p class="text-4xl font-black text-crimson mb-2">€50</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border-2 border-crimson/30 italic text-crimson">
+                    <h5 class="font-bold mb-4">Pacchetto 4 Controlli</h5>
+                    <p class="text-4xl font-black mb-2">€150</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border-2 border-crimson/30 italic text-crimson">
+                    <h5 class="font-bold mb-4">Pacchetto 6 Controlli</h5>
+                    <p class="text-4xl font-black mb-2">€250</p>
+                </div>
+            </div>
+            
+            <p class="mt-12 text-sm text-slate-400 italic">Pagamenti in struttura tramite bancomat, bonifico o contanti.</p>
         </div>
     </section>
 
+    <!-- NUOVA SEZIONE RECENSIONI -->
     <section id="recensioni" class="py-20 bg-rose-50">
         <div class="container mx-auto px-6 max-w-6xl">
             <h3 class="text-3xl font-bold italic text-crimson uppercase tracking-widest mb-16 text-center">Cosa dicono di me</h3>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-white p-8 rounded-3xl shadow-sm border border-rose-100 italic">
-                    <p class="text-slate-600 leading-relaxed mb-6">"Arianna è straordinaria. Ha saputo accogliere le mie fragilità maneggiandole con tatto e cura. Non avrei potuto intraprendere la via della rinascita senza Ari."</p>
+                    <p class="text-slate-600 leading-relaxed mb-6">"Arianna è una professionista straordinaria ed una persona altrettanto speciale. Ha saputo accogliere le mie fragilità maneggiandole con tatto e cura. Non avrei potuto intraprendere la via della rinascita senza Ari."</p>
                     <p class="font-bold text-crimson uppercase tracking-wider">— Eleonora Michelangeli</p>
                 </div>
                 <div class="bg-white p-8 rounded-3xl shadow-sm border border-rose-100 italic">
-                    <p class="text-slate-600 leading-relaxed mb-6">"La Dottoressa Arianna è fantastica. Analizza ed elabora il piano adatto senza limitarti, propensa ad ascoltare le problematiche di ognuno. Io di lei mi fido."</p>
+                    <p class="text-slate-600 leading-relaxed mb-6">"La Dottoressa Arianna è fantastica. Analizza ed elabora il piano adatto senza limitarti, propensa ad ascoltare le problematiche di ognuno. Io di lei mi fido perché ho iniziato e non la lascio più."</p>
                     <p class="font-bold text-crimson uppercase tracking-wider">— Speranza Gambini</p>
                 </div>
                 <div class="bg-white p-8 rounded-3xl shadow-sm border border-rose-100 italic">
-                    <p class="text-slate-600 leading-relaxed mb-6">"Professionista preparata, competente e molto empatica. Ti mette a tuo agio, stimolandoti a portare avanti lo schema alimentare senza stancarti."</p>
+                    <p class="text-slate-600 leading-relaxed mb-6">"Professionista preparata, competente molto professionale ed empatica. La consiglio. Ti mette a proprio agio, stimolandoti a portare avanti lo schema alimentare senza stancarti."</p>
                     <p class="font-bold text-crimson uppercase tracking-wider">— Marilena Esposito</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- NUOVA SEZIONE CONTATTI -->
     <section id="contatti" class="py-20 bg-white">
         <div class="container mx-auto px-6 max-w-xl text-center">
             <h3 class="text-3xl font-bold italic text-crimson uppercase tracking-widest mb-12">Contattami</h3>
-            
-            <!-- Aggiunta Link Social -->
-            <div class="mb-12 flex justify-center gap-4">
-                <a href="INSERISCI_QUI_URL_INSTAGRAM" target="_blank" class="bg-gradient-to-tr from-yellow-500 to-purple-600 text-white px-6 py-3 rounded-xl font-bold hover:opacity-90 transition">Instagram</a>
-                <a href="INSERISCI_QUI_URL_FACEBOOK" target="_blank" class="bg-blue-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-blue-700 transition">Facebook</a>
-            </div>
-
             <form action="#" method="POST" class="space-y-4">
                 <input type="text" placeholder="Nome e Cognome" class="w-full p-4 rounded-xl border border-slate-200 focus:border-crimson outline-none">
                 <input type="email" placeholder="La tua Email" class="w-full p-4 rounded-xl border border-slate-200 focus:border-crimson outline-none">
@@ -134,12 +178,27 @@
         </div>
     </section>
 
-    <footer class="bg-slate-900 text-white py-16 px-6 text-center">
-        <p class="italic mb-4">Dott.ssa Arianna Badiali | P.IVA 02864320425 | Jesi (AN)</p>
-        <p class="text-slate-400">Seguimi sui social: 
-            <a href="INSERISCI_QUI_URL_INSTAGRAM" class="text-white underline mx-2">Instagram</a> | 
-            <a href="INSERISCI_QUI_URL_FACEBOOK" class="text-white underline mx-2">Facebook</a>
-        </p>
+    <footer class="bg-slate-900 text-white py-16 px-6">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <div>
+                <h4 class="text-2xl font-extrabold italic uppercase mb-2 text-rose-50">Dott.ssa Arianna Badiali</h4>
+                <p class="text-slate-400 text-sm italic">Largo Salvador Allende 10/A, Jesi (AN)</p>
+                <p class="text-slate-500 text-xs mt-1 italic">P.IVA 02864320425 | Albo n. 4019</p>
+                <div class="flex gap-6 mt-8 justify-center md:justify-start">
+                    <a href="https://www.facebook.com/ariannabadialinutrizionista" target="_blank" class="hover:scale-110 transition">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" class="w-10 h-10" alt="FB">
+                    </a>
+                    <a href="https://www.instagram.com/ariannabadiali_nutrizionista/" target="_blank" class="hover:scale-110 transition">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" class="w-10 h-10" alt="IG">
+                    </a>
+                </div>
+            </div>
+            <div class="mt-10 md:mt-0 italic">
+                <p class="text-slate-200 text-2xl font-bold mb-1">WhatsApp: 349 585 4951</p>
+                <p class="text-slate-400 text-sm mb-6 uppercase tracking-widest font-bold">Ricevo su appuntamento</p>
+                <a href="https://wa.me/393495854951" class="bg-crimson px-10 py-4 rounded-xl font-bold text-xs uppercase tracking-widest shadow-lg inline-block">Contattami</a>
+            </div>
+        </div>
     </footer>
 
 </body>
